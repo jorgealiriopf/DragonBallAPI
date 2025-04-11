@@ -19,6 +19,13 @@ namespace DragonBallAPI.Controllers
             _dragonBallService = dragonBallService;
         }
         [Authorize]
+        [HttpPost("sync")]
+        public async Task<IActionResult> SyncCharacters()
+        {
+            await _dragonBallService.ImportCharactersAsync();
+            return Ok("Sincronización completada.");
+        }
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetCharacters()
         {
@@ -42,13 +49,6 @@ namespace DragonBallAPI.Controllers
         {
             var transformations = await _context.Transformations.Include(t => t.Character).ToListAsync();
             return Ok(transformations);
-        }
-        [Authorize]
-        [HttpPost("sync")]
-        public async Task<IActionResult> SyncCharacters()
-        {
-            await _dragonBallService.ImportCharactersAsync();
-            return Ok("Sincronización completada.");
         }
         [Authorize]
         [HttpGet("search/by-name")]
