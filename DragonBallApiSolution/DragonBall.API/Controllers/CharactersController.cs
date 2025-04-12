@@ -23,7 +23,7 @@ namespace DragonBallAPI.Controllers
         public async Task<IActionResult> SyncCharacters()
         {
             await _dragonBallService.ImportCharactersAsync();
-            return Ok("Sincronización completada.");
+            return Ok("Synchronization completed.");
         }
         [Authorize]
         [HttpGet]
@@ -72,7 +72,5 @@ namespace DragonBallAPI.Controllers
 
             return Ok(results);
         }
-
-
     }
 }
