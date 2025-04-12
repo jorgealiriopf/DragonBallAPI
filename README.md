@@ -13,8 +13,7 @@ This project consumes the [Dragon Ball API](https://dragonball-api.com), imports
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/jorgealiriopf/DragonBallAPI.git
-   cd DragonBallAPI
+   https://github.com/jorgealiriopf/DragonBallAPI.git
    ```
 
 2. **Restore dependencies**
