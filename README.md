@@ -21,6 +21,7 @@ This project consumes the [Dragon Ball API](https://dragonball-api.com), imports
    cd DragonBallAPI/DragonBallApiSolution
    dotnet restore
    ```
+   > Navigate into the solution folder and restore the NuGet packages
 
 3. **Apply the database migrations**
    ```bash
