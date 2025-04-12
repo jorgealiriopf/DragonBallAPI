@@ -35,6 +35,7 @@ This project consumes the [Dragon Ball API](https://dragonball-api.com), imports
    ```
 
    > The Swagger UI will open automatically at [https://localhost:7261/swagger](https://localhost:7261/swagger)
+   > Note: When using this command, the Swagger page will open immediately, but the backend may still be compiling. You might see an error message at first. Simply wait a moment and refresh the page once the build completes.
 
 5. **Import data (Important!)**
 
