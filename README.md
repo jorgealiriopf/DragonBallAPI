@@ -15,9 +15,10 @@ This project consumes the [Dragon Ball API](https://dragonball-api.com), imports
    ```bash
    https://github.com/jorgealiriopf/DragonBallAPI.git
    ```
-
+   
 2. **Restore dependencies**
    ```bash
+   cd DragonBallAPI/DragonBallApiSolution
    dotnet restore
    ```
 
